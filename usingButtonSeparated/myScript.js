@@ -38,7 +38,40 @@ function myFunction() {
 
   let $ = "Hello world"; //commonly used as an alias for the main function in a JavaScript library
 
-  let _lastName = "Meduri"; //commonly used as an alias for private or hidden variables
+  let _lastName = "Doe"; //commonly used as an alias for private or hidden variables
 
   document.getElementById("demo3").innerHTML = $;
+
+  //creating a constant array of cars
+  const cars = ["Saab", "Volvo", "BMW"];
+
+  //Changing an element in the array of cars
+  cars[0] = "Toyota";
+
+  //adding an element in the array of cars
+  cars.push("Audi");
+
+  //prints out cars on console
+  console.log(cars);
+
+  //creating object
+  const car = { type: "Fiat", model: "500", color: "white" };
+
+  //changing a property:
+  car.color = "red";
+
+  //adding a property:
+  car.owner = "John";
+
+  //prints out car on console
+  console.log(car);
+
+  let text1 = "John";
+  let text2 = "Doe";
+  let text3 = text1 + " " + text2;
+  console.log(text3);
+
+  let text4 = "What a very ";
+  text4 += "nice day";
+  console.log(text4);
 }
