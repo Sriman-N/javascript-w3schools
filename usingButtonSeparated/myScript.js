@@ -74,4 +74,50 @@ function myFunction() {
   let text4 = "What a very ";
   text4 += "nice day";
   console.log(text4);
+
+  function toCelsius(fahrenheit) {
+    return (5 / 9) * (fahrenheit - 32);
+  }
+
+  let value = toCelsius(77);
+
+  document.getElementById("demo4").innerHTML = value;
+
+  //Both of these commands are the same
+  let text = "The temperature is " + value + " Celsius";
+  //let text = "The temperature is " + toCelsius(77) + " Celsius";
+
+  let str = "Apple, Banana, Kiwi";
+  let part = str.substring(-2, 13);
+
+  document.getElementById("demo5").innerHTML = part;
+
+  //const cars = ["Saab", "Volvo", "BMW"];
+  let car1 = cars[0];
+
+  //changing a array element
+  cars[0] = "Opel";
+
+  //converting a string array to a string
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("Demo").innerHTML = fruits.toString();
+
+  //accessing the full array
+  document.getElementById("Demo1").innerHTML = cars;
+
+  const numbers = [45, 4, 9, 16, 25];
+
+  let txt = "";
+  numbers.forEach(myFunction1);
+
+  function myFunction1(value, index, array) {
+    txt += value;
+  }
+
+  let language = "JavaScript";
+
+  let text5 = "";
+  for (let x of language) {
+    text5 += x;
+  }
 }
